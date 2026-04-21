@@ -64,216 +64,6 @@
   --bs-body-bg: #fff;
 }
 
-/* Custom Mastema Tech Styles - Opencode.ai Inspired */
-:root {
-  --bs-primary: #6366f1; /* Blue */
-  --bs-secondary: #8b5cf6; /* Purple */
-  --bs-body-font-family: 'Inter', sans-serif;
-  --bs-body-bg: #050505; /* Almost pure black */
-  --bs-body-color: #e2e8f0;
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-  --card-bg: rgba(20, 20, 20, 0.6);
-  --card-border: rgba(255, 255, 255, 0.08);
-}
-
-body {
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
-  position: relative;
-}
-
-/* Subtle background grid pattern */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 30px 30px;
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* Glowing Radial Backgrounds */
-.glow-bg {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0,0,0,0) 70%);
-  top: -200px;
-  left: -200px;
-  z-index: -1;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.glow-bg-2 {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, rgba(0,0,0,0) 70%);
-  bottom: 10%;
-  right: -100px;
-  z-index: -1;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.bg-dark {
-  background-color: transparent !important;
-}
-
-.bg-light {
-  background-color: var(--card-bg) !important;
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border) !important;
-}
-
-.text-dark {
-  color: #f8fafc !important;
-}
-
-.text-muted {
-  color: #94a3b8 !important;
-}
-
-/* Gradient Text */
-.text-gradient {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.eyebrow {
-  font-family: var(--bs-font-monospace);
-  font-size: 0.85rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #a855f7;
-  margin-bottom: 0.75rem;
-  display: block;
-  font-weight: 600;
-}
-
-.btn-primary {
-  background: var(--accent-gradient);
-  border: none;
-  color: #fff;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
-}
-
-.btn-primary:hover, .btn-primary:focus {
-  background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
-  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
-  transform: translateY(-2px);
-  color: #fff;
-}
-
-.btn-outline-primary {
-  color: #e2e8f0;
-  border: 1px solid rgba(139, 92, 246, 0.5);
-  background: rgba(139, 92, 246, 0.05);
-}
-
-.btn-outline-primary:hover, .btn-outline-primary:focus {
-  background: rgba(139, 92, 246, 0.15);
-  border-color: #8b5cf6;
-  color: #fff;
-  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
-}
-
-/* Mastema Tech UX/UI Enhancements */
-.custom-rounded {
-  border-radius: 16px !important;
-}
-
-.hero-img-container {
-  position: relative;
-}
-
-.hero-img-container::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  border-radius: 16px;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
-  pointer-events: none;
-}
-
-.btn {
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-/* Hover effects for service cards */
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(99, 102, 241, 0.1) !important;
-  border-color: rgba(139, 92, 246, 0.4) !important;
-}
-
-.service-icon-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  margin-bottom: 1.5rem;
-  box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.1);
-  color: #a855f7;
-}
-
-/* Gradient CTA */
-.cta-gradient {
-  background: rgba(15, 15, 15, 0.8);
-  border: 1px solid var(--card-border) !important;
-  backdrop-filter: blur(12px);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-gradient::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; height: 2px;
-  background: var(--accent-gradient);
-}
-
-/* Navbar transition */
-.transition-navbar {
-  transition: all 0.3s ease-in-out;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  background-color: transparent !important;
-  border-bottom: 1px solid transparent;
-}
-.navbar-scrolled {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid var(--card-border);
-  background-color: rgba(5, 5, 5, 0.85) !important;
-  backdrop-filter: blur(12px);
-}
-
-#mainNav {
-  background-color: transparent !important;
-}
-#mainNav.navbar-scrolled {
-  background-color: rgba(5, 5, 5, 0.85) !important;
-}
-
-
 *,
 *::before,
 *::after {
@@ -11495,4 +11285,220 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}/* Custom Mastema Tech Styles - Opencode.ai Inspired */
+:root {
+  --bs-primary: #6366f1; /* Blue */
+  --bs-secondary: #8b5cf6; /* Purple */
+  --bs-body-font-family: 'Inter', sans-serif;
+  --bs-body-bg: #050505; /* Almost pure black */
+  --bs-body-color: #e2e8f0;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --card-bg: rgba(20, 20, 20, 0.6);
+  --card-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  position: relative;
+}
+
+/* Subtle background grid pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Glowing Radial Backgrounds */
+.glow-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0,0,0,0) 70%);
+  top: -200px;
+  left: -200px;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.glow-bg-2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, rgba(0,0,0,0) 70%);
+  bottom: 10%;
+  right: -100px;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.bg-light {
+  background-color: var(--card-bg) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border) !important;
+}
+
+.text-dark {
+  color: #f8fafc !important;
+}
+
+.text-muted {
+  color: #94a3b8 !important;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.eyebrow {
+  font-family: var(--bs-font-monospace);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a855f7;
+  margin-bottom: 0.75rem;
+  display: block;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent-gradient);
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  color: #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: #8b5cf6;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Mastema Tech UX/UI Enhancements */
+.custom-rounded {
+  border-radius: 16px !important;
+}
+
+.hero-img-container {
+  position: relative;
+}
+
+.hero-img-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+  pointer-events: none;
+}
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Hover effects for service cards */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(99, 102, 241, 0.1) !important;
+  border-color: rgba(139, 92, 246, 0.4) !important;
+}
+
+.service-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.1);
+  color: #a855f7;
+}
+
+/* Gradient CTA */
+.cta-gradient {
+  background: rgba(15, 15, 15, 0.8);
+  border: 1px solid var(--card-border) !important;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: var(--accent-gradient);
+}
+
+/* Navbar transition */
+.transition-navbar {
+  transition: all 0.3s ease-in-out;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent;
+}
+.navbar-scrolled {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--card-border);
+  background-color: rgba(5, 5, 5, 0.85) !important;
+  backdrop-filter: blur(12px);
+}
+
+#mainNav {
+  background-color: transparent !important;
+}
+#mainNav.navbar-scrolled {
+  background-color: rgba(5, 5, 5, 0.85) !important;
+}
+
+
+
+/* Override for all cards */
+.card {
+  background-color: var(--card-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid var(--card-border) !important;
 }
