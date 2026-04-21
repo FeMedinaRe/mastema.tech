@@ -13,6 +13,8 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+    <div class="glow-bg"></div>
+    <div class="glow-bg-2"></div>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top transition-navbar" id="mainNav">
         <div class="container px-5">
@@ -31,45 +33,59 @@
     <div class="container px-4 px-lg-5" style="margin-top: 7rem;">
         
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <div class="col-lg-7"><img class="img-fluid custom-rounded mb-4 mb-lg-0 shadow" src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Mantenimiento de computadores" /></div>
+            <div class="col-lg-7">
+                <div class="hero-img-container mb-4 mb-lg-0">
+                    <img class="img-fluid custom-rounded shadow" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Tecnología avanzada y hardware" />
+                </div>
+            </div>
             <div class="col-lg-5">
-                <h1 class="display-4 fw-bold text-white mb-3">Tu aliado tecnológico de confianza</h1>
-                <p class="lead mb-4">En Mastema Tech ofrecemos soluciones rápidas y efectivas para tus equipos informáticos. Especialistas en optimización, reparación y ensamblaje de computadores a la medida.</p>
-                <a class="btn btn-primary btn-lg" href="#contacto">Solicitar Soporte</a>
+                <span class="eyebrow">Soporte IT Avanzado</span>
+                <h1 class="display-4 fw-bold text-white mb-3">Tu <span class="text-gradient">aliado tecnológico</span> de confianza</h1>
+                <p class="lead text-muted mb-4">Soluciones de alto rendimiento para tus equipos informáticos. Especialistas en optimización extrema, reparación y ensamblaje de estaciones de trabajo y gaming.</p>
+                <div class="d-flex gap-3">
+                    <a class="btn btn-primary btn-lg px-4" href="#contacto">Solicitar Soporte</a>
+                    <a class="btn btn-outline-primary btn-lg px-4" href="#servicios">Ver Servicios</a>
+                </div>
             </div>
         </div>
         
-        <div class="card text-white border-0 cta-gradient my-5 py-4 text-center custom-rounded shadow-sm">
-            <div class="card-body"><p class="text-white m-0 fs-5">¿Problemas urgentes con tus equipos? Escríbenos directamente a <strong>felipe.medina98@gmail.com</strong></p></div>
+        <div class="card text-white border-0 cta-gradient my-5 py-4 text-center custom-rounded shadow-lg">
+            <div class="card-body"><p class="text-white m-0 fs-5 fw-light">¿Problemas críticos de rendimiento o hardware? Contacto directo: <strong class="text-gradient">felipe.medina98@gmail.com</strong></p></div>
         </div>
         
         <div class="row gx-4 gx-lg-5" id="servicios">
             <div class="col-md-4 mb-5">
-                <div class="card h-100 shadow-sm border-0 bg-light service-card custom-rounded">
+                <div class="card h-100 shadow-lg border-0 bg-light service-card custom-rounded">
                     <div class="card-body text-center p-4">
-                        <div class="text-center mb-4"><i class="bi bi-pc-display text-primary" style="font-size: 3.5rem;"></i></div>
-                        <h2 class="card-title h4 mb-3">Formateo de Computadores</h2>
-                        <p class="card-text text-muted">Instalación limpia de sistema operativo (Windows, Linux), eliminación de virus, respaldo de información y configuración de drivers para dejar tu equipo como nuevo.</p>
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-pc-display" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h2 class="card-title h4 mb-3 fw-bold text-white">Mantenimiento de OS</h2>
+                        <p class="card-text text-muted">Instalación limpia de Windows/Linux, eliminación profunda de malware, recuperación de datos y configuración óptima de controladores.</p>
                     </div>
                     <div class="card-footer bg-transparent border-0 pt-0 text-center pb-4"><a class="btn btn-outline-primary px-4" href="#contacto">Me interesa</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <div class="card h-100 shadow-sm border-0 bg-light service-card custom-rounded">
+                <div class="card h-100 shadow-lg border-0 bg-light service-card custom-rounded">
                     <div class="card-body text-center p-4">
-                        <div class="text-center mb-4"><i class="bi bi-memory text-primary" style="font-size: 3.5rem;"></i></div>
-                        <h2 class="card-title h4 mb-3">Mejora de Componentes</h2>
-                        <p class="card-text text-muted">Dale una segunda vida a tu PC o laptop actualizando su almacenamiento a SSD y aumentando la memoria RAM. Notarás la diferencia en velocidad de inmediato.</p>
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-memory" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h2 class="card-title h4 mb-3 fw-bold text-white">Upgrade de Hardware</h2>
+                        <p class="card-text text-muted">Maximiza el rendimiento actualizando a unidades NVMe ultrarrápidas y memoria RAM de alta frecuencia. Revive tu equipo al instante.</p>
                     </div>
                     <div class="card-footer bg-transparent border-0 pt-0 text-center pb-4"><a class="btn btn-outline-primary px-4" href="#contacto">Me interesa</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <div class="card h-100 shadow-sm border-0 bg-light service-card custom-rounded">
+                <div class="card h-100 shadow-lg border-0 bg-light service-card custom-rounded">
                     <div class="card-body text-center p-4">
-                        <div class="text-center mb-4"><i class="bi bi-tools text-primary" style="font-size: 3.5rem;"></i></div>
-                        <h2 class="card-title h4 mb-3">Armado de PC a Pedido</h2>
-                        <p class="card-text text-muted">Ensamblaje profesional de computadores de escritorio para ofimática, diseño gráfico, programación o gaming, ajustándonos estrictamente a tu presupuesto.</p>
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-cpu" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h2 class="card-title h4 mb-3 fw-bold text-white">Ensamblaje Custom</h2>
+                        <p class="card-text text-muted">Construcción de equipos de alto rendimiento, estaciones de diseño, desarrollo o gaming setups con gestión de cables impecable.</p>
                     </div>
                     <div class="card-footer bg-transparent border-0 pt-0 text-center pb-4"><a class="btn btn-outline-primary px-4" href="#contacto">Me interesa</a></div>
                 </div>
@@ -77,19 +93,18 @@
         </div>
     </div>
     
-    <footer class="py-5 bg-dark" id="contacto">
+    <footer class="py-5" style="background-color: #050505; border-top: 1px solid rgba(255,255,255,0.05);" id="contacto">
         <div class="container px-4 px-lg-5">
             <div class="text-center text-white mb-4">
-                <h3 class="h4 mb-3">Contacto</h3>
-                <p class="mb-1">¿Necesitas ayuda con tu equipo?</p>
-                <p class="mb-0 fs-5 mt-2">
-                    <a href="mailto:felipe.medina98@gmail.com" class="text-white text-decoration-none">
-                        ✉️ felipe.medina98@gmail.com
+                <span class="eyebrow mb-2">Contacto</span>
+                <p class="mb-1 text-muted">¿Necesitas ayuda urgente con tu equipo de alto rendimiento?</p>
+                <p class="mb-0 fs-5 mt-3">
+                    <a href="mailto:felipe.medina98@gmail.com" class="text-white text-decoration-none d-inline-flex align-items-center gap-2">
+                        <i class="bi bi-envelope" style="color: #a855f7;"></i> felipe.medina98@gmail.com
                     </a>
                 </p>
             </div>
-            <hr class="text-white-50 mx-auto mb-4" style="max-width: 200px;">
-            <p class="m-0 text-center text-white-50 small">Copyright &copy; Mastema Tech 2026. Todos los derechos reservados.</p>
+            <p class="m-0 text-center text-muted small mt-5 pt-3 border-top" style="border-color: rgba(255,255,255,0.05) !important;">&copy; 2026 <span class="text-white fw-bold">Mastema Tech</span>. Todos los derechos reservados.</p>
         </div>
     </footer>
     
