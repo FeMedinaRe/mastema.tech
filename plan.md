@@ -52,25 +52,23 @@ Transformar el sitio web de **Mastema Tech** en la plataforma corporativa de **M
 - **Gestión de menú móvil**: asegurar que el toggler funcione y cierre el menú tras selección.
 
 ## 4. Implementación Paso a Paso
-1. **Crear archivo `plan.md`** (documento actual).  
-2. **Actualizar `index.html`** con los cambios estructurales y de contenido.  
-3. **Modificar `css/styles.css`**:  
-   - Actualizar variables de color.  
-   - Reestilizar los cards y botones.  
-   - Añadir estilos para la nueva sección de casos de éxito y footer.  
-4. **Editar `js/scripts.js`**:  
-   - Implementar scroll suave y animaciones.  
-   - Asegurarvalidación de formularios (si procede).  
-5. **Revisar y previsualizar** el sitio en navegador.  
-6. **Ajustar** posibles inconsistencias de maquetado o funcionalidad.  
-7. **Finalizar** y confirmar que todos los enlaces y llamados a acción funcionan correctamente.
+| Paso | Descripción | Estado |
+|------|-----------|--------|
+| 1 | Crear archivo `plan.md` | ✅ Completado |
+| 2 | Actualizar `index.html` con cambios estructurales y de contenido | ✅ Completado |
+| 3 | Modificar `css/styles.css` (variables, cards, botones, casos) | ✅ Completado |
+| 4 | Editar `js/scripts.js` (scroll suave, animaciones, menú móvil) | ✅ Completado |
+| 5 | Revisar y previsualizar el sitio en navegador | ⏳ Pendiente |
+| 6 | Ajustar posibles inconsistencias de maquetado | ⏳ Pendiente |
+| 7 | Finalizar y confirmar funcionamiendo de enlaces | ⏳ Pendiente |
 
 ## 5. Entregables
-- `index.html` actualizado.  
-- `css/styles.css` con estilos corporativos.  
-- `js/scripts.js` con funcionalidades de interacción.  
-- `plan.md` (este documento) como registro del proyecto.  
-- Imágenes y recursos gráficos necesarios (íconos, banner de casos de éxito).  
+| Archivo | Estado |
+|---------|--------|
+| `index.html` | ✅ Completado |
+| `css/styles.css` | ✅ Completado |
+| `js/scripts.js` | ✅ Completado |
+| `plan.md` | ✅ Actualizado |  
 
 ## 6. Plazos Estimados
 | Etapa | Tiempo estimado |
