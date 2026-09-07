@@ -11536,3 +11536,128 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Mastema visual system aligned with femedinare.tech */
+:root {
+  --mastema-primary: #3b82f6;
+  --mastema-primary-dark: #2563eb;
+  --mastema-dark: #0f172a;
+  --mastema-dark-light: #111827;
+  --mastema-text: #f8fafc;
+  --mastema-muted: #94a3b8;
+  --mastema-border: #2a2a30;
+  --mastema-radius: 12px;
+}
+
+html { scroll-padding-top: 84px; }
+body {
+  background: var(--mastema-dark);
+  color: var(--mastema-text);
+  overflow-x: hidden;
+}
+.bg-subtle {
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.10), transparent 42%),
+              linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.96) 100%);
+}
+
+#mainNav,
+#mainNav.navbar-scrolled {
+  background: rgba(15, 23, 42, 0.88) !important;
+  border-bottom: 1px solid var(--mastema-border);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+#mainNav .navbar-brand {
+  color: var(--mastema-text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+#mainNav .nav-link {
+  color: var(--mastema-muted);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: color .2s ease;
+}
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link.active { color: var(--mastema-primary); }
+#mainNav .navbar-toggler {
+  min-width: 44px;
+  min-height: 44px;
+  border-color: var(--mastema-border);
+}
+
+.container { max-width: 1200px; }
+.container.px-4 { padding-left: 24px !important; padding-right: 24px !important; }
+.hero-img-container img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.text-gradient {
+  background: linear-gradient(135deg, var(--mastema-primary), #93c5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.eyebrow { color: var(--mastema-primary); }
+.text-muted { color: var(--mastema-muted) !important; }
+.btn-primary {
+  background: var(--mastema-primary);
+  border-color: var(--mastema-primary);
+  min-height: 44px;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: var(--mastema-primary-dark);
+  border-color: var(--mastema-primary-dark);
+}
+.btn-outline-primary {
+  color: var(--mastema-text);
+  border-color: var(--mastema-border);
+  min-height: 44px;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background: rgba(59, 130, 246, .12);
+  border-color: var(--mastema-primary);
+  color: var(--mastema-text);
+}
+.card, .service-card, .cta-gradient {
+  background: var(--mastema-dark-light) !important;
+  border: 1px solid var(--mastema-border) !important;
+  border-radius: var(--mastema-radius) !important;
+}
+.service-card:hover { border-color: rgba(59, 130, 246, .55) !important; box-shadow: 0 14px 32px rgba(0,0,0,.25) !important; }
+.service-icon-wrapper { border-radius: var(--mastema-radius); background: rgba(59, 130, 246, .12); color: var(--mastema-primary); border-color: rgba(59, 130, 246, .25); }
+.stat-number { color: var(--mastema-primary); }
+.stats-section { border-color: var(--mastema-border); }
+footer { border-top: 1px solid var(--mastema-border); }
+
+@media (max-width: 991.98px) {
+  .transition-navbar { padding-top: .75rem; padding-bottom: .75rem; }
+  #navbarSupportedContent { padding: .75rem 0 .25rem; }
+  #navbarSupportedContent .navbar-nav { gap: .25rem; }
+  .container[style*="margin-top"] { margin-top: 5.5rem !important; }
+  .display-4 { font-size: clamp(2rem, 6vw, 3.25rem); }
+}
+
+@media (max-width: 767.98px) {
+  .container.px-4, .container.px-5 { padding-left: 20px !important; padding-right: 20px !important; }
+  .row.gx-4, .row.gx-lg-5 { --bs-gutter-x: 1.25rem; }
+  .hero-img-container { margin-bottom: 1.75rem !important; }
+  .lead { font-size: 1.05rem; }
+  .d-flex.gap-3 { flex-wrap: wrap; }
+  .d-flex.gap-3 .btn { flex: 1 1 100%; }
+  .stats-section { padding: 1.5rem 0; }
+  .stat-number { font-size: 1.75rem; }
+  #casos, #proyectos { padding-top: 2rem; padding-bottom: 2rem; }
+  #casos .col-md-4, #proyectos .col-md-4 { margin-bottom: 1.25rem !important; }
+  .card-title { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 420px) {
+  .display-4 { font-size: 1.9rem; }
+  .eyebrow { font-size: .68rem; letter-spacing: .1em; }
+  .stat-label { font-size: .75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
